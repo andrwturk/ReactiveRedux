@@ -10,9 +10,8 @@ Here's an example that uses ReactiveRedux in a SwiftUI application to manage a s
 
 struct ChatView: View {
     
-    @State private var messages: [String]
     let storage: StateStorage<ChatState, ChatAction>
-    @State private var cancellables = Set<AnyCancellable>()
+    @State private var messages: [String]
     @State private var newMessage: String = ""
     
     var body: some View {
@@ -30,18 +29,12 @@ struct ChatView: View {
                         .dispatch(action: .sendMessage(newMessage))
                 }
             }
-        }.onAppear {
-            storage
-                .observeState()
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { _ in
-                }, receiveValue: { state in
-                    messages = state.messages
-                })
-                .store(in: &cancellables)
-        }
+        }.onReceive(storage.observeState(), perform: { state in
+            messages = state.messages
+        })
     }
 }
+
 ```
 
 ## Example App: Building a Chat Application
