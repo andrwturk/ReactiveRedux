@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA76B5612B0818ED00DA3B16 /* ReduxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */; };
+		CA76B5632B0818ED00DA3B16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5622B0818ED00DA3B16 /* ContentView.swift */; };
+		CA76B5862B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5842B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift */; };
+		CA76B5872B081A8D00DA3B16 /* FetchMessagesActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */; };
+		CA76B5892B081A9C00DA3B16 /* ChatStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */; };
+		CA76B58B2B081AA900DA3B16 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B58A2B081AA900DA3B16 /* ChatPresenter.swift */; };
+		CA76B58E2B081BD500DA3B16 /* ChatState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B58D2B081BD500DA3B16 /* ChatState.swift */; };
+		CA76B5902B081C0A00DA3B16 /* ChatAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B58F2B081C0A00DA3B16 /* ChatAction.swift */; };
+		CA76B5952B081D8100DA3B16 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5922B081D8100DA3B16 /* MessageInputView.swift */; };
+		CA76B5962B081D8100DA3B16 /* ChatMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5932B081D8100DA3B16 /* ChatMessageView.swift */; };
+		CA76B5972B081D8100DA3B16 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5942B081D8100DA3B16 /* ChatView.swift */; };
+		CA76B59A2B081F2F00DA3B16 /* ChatViewStateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5992B081F2F00DA3B16 /* ChatViewStateItem.swift */; };
+		CA76B59E2B09295A00DA3B16 /* ChatRepositoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B59D2B09295A00DA3B16 /* ChatRepositoring.swift */; };
+		CA76B5A02B09296300DA3B16 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B59F2B09296300DA3B16 /* ChatRepository.swift */; };
+		CA76B5A42B092AAE00DA3B16 /* ChatStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5A32B092AAE00DA3B16 /* ChatStateMachine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA76B5792B081A2B00DA3B16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CA76B5462B08179B00DA3B16;
+			remoteInfo = ReactiveRedux;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CA76B55D2B0818ED00DA3B16 /* ReduxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxApp.swift; sourceTree = "<group>"; };
+		CA76B5622B0818ED00DA3B16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveRedux.xcodeproj; path = ../ReactiveRedux.xcodeproj; sourceTree = "<group>"; };
+		CA76B5842B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRecursiveActionCreator.swift; sourceTree = "<group>"; };
+		CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMessagesActionCreator.swift; sourceTree = "<group>"; };
+		CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatStateReducer.swift; sourceTree = "<group>"; };
+		CA76B58A2B081AA900DA3B16 /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
+		CA76B58D2B081BD500DA3B16 /* ChatState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatState.swift; sourceTree = "<group>"; };
+		CA76B58F2B081C0A00DA3B16 /* ChatAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAction.swift; sourceTree = "<group>"; };
+		CA76B5922B081D8100DA3B16 /* MessageInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		CA76B5932B081D8100DA3B16 /* ChatMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageView.swift; sourceTree = "<group>"; };
+		CA76B5942B081D8100DA3B16 /* ChatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		CA76B5992B081F2F00DA3B16 /* ChatViewStateItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewStateItem.swift; sourceTree = "<group>"; };
+		CA76B59D2B09295A00DA3B16 /* ChatRepositoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepositoring.swift; sourceTree = "<group>"; };
+		CA76B59F2B09296300DA3B16 /* ChatRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRepository.swift; sourceTree = "<group>"; };
+		CA76B5A32B092AAE00DA3B16 /* ChatStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStateMachine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA76B55A2B0818ED00DA3B16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA76B5542B0818ED00DA3B16 = {
+			isa = PBXGroup;
+			children = (
+				CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */,
+				CA76B55F2B0818ED00DA3B16 /* ReduxApp */,
+				CA76B55E2B0818ED00DA3B16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CA76B55E2B0818ED00DA3B16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B55D2B0818ED00DA3B16 /* ReduxApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA76B55F2B0818ED00DA3B16 /* ReduxApp */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B57B2B081A4000DA3B16 /* Sources */,
+			);
+			path = ReduxApp;
+			sourceTree = "<group>";
+		};
+		CA76B5762B081A2B00DA3B16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B57A2B081A2B00DA3B16 /* ReactiveRedux.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA76B57B2B081A4000DA3B16 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B59B2B0928F200DA3B16 /* Model */,
+				CA76B5982B081F2300DA3B16 /* Presentation */,
+				CA76B5912B081D8100DA3B16 /* UI */,
+				CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */,
+				CA76B5842B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift */,
+				CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */,
+				CA76B5622B0818ED00DA3B16 /* ContentView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		CA76B5912B081D8100DA3B16 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B5922B081D8100DA3B16 /* MessageInputView.swift */,
+				CA76B5932B081D8100DA3B16 /* ChatMessageView.swift */,
+				CA76B5942B081D8100DA3B16 /* ChatView.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		CA76B5982B081F2300DA3B16 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B58A2B081AA900DA3B16 /* ChatPresenter.swift */,
+				CA76B5992B081F2F00DA3B16 /* ChatViewStateItem.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		CA76B59B2B0928F200DA3B16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B59C2B09291E00DA3B16 /* Data */,
+				CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */,
+				CA76B58D2B081BD500DA3B16 /* ChatState.swift */,
+				CA76B58F2B081C0A00DA3B16 /* ChatAction.swift */,
+				CA76B5A32B092AAE00DA3B16 /* ChatStateMachine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CA76B59C2B09291E00DA3B16 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B59D2B09295A00DA3B16 /* ChatRepositoring.swift */,
+				CA76B59F2B09296300DA3B16 /* ChatRepository.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA76B55C2B0818ED00DA3B16 /* ReduxApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA76B56B2B0818EE00DA3B16 /* Build configuration list for PBXNativeTarget "ReduxApp" */;
+			buildPhases = (
+				CA76B5592B0818ED00DA3B16 /* Sources */,
+				CA76B55A2B0818ED00DA3B16 /* Frameworks */,
+				CA76B55B2B0818ED00DA3B16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReduxApp;
+			productName = ReduxApp;
+			productReference = CA76B55D2B0818ED00DA3B16 /* ReduxApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA76B5552B0818ED00DA3B16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					CA76B55C2B0818ED00DA3B16 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = CA76B5582B0818ED00DA3B16 /* Build configuration list for PBXProject "ReduxApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA76B5542B0818ED00DA3B16;
+			productRefGroup = CA76B55E2B0818ED00DA3B16 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CA76B5762B081A2B00DA3B16 /* Products */;
+					ProjectRef = CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				CA76B55C2B0818ED00DA3B16 /* ReduxApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CA76B57A2B081A2B00DA3B16 /* ReactiveRedux.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveRedux.framework;
+			remoteRef = CA76B5792B081A2B00DA3B16 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA76B55B2B0818ED00DA3B16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA76B5592B0818ED00DA3B16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA76B5962B081D8100DA3B16 /* ChatMessageView.swift in Sources */,
+				CA76B5A02B09296300DA3B16 /* ChatRepository.swift in Sources */,
+				CA76B58E2B081BD500DA3B16 /* ChatState.swift in Sources */,
+				CA76B5902B081C0A00DA3B16 /* ChatAction.swift in Sources */,
+				CA76B58B2B081AA900DA3B16 /* ChatPresenter.swift in Sources */,
+				CA76B5972B081D8100DA3B16 /* ChatView.swift in Sources */,
+				CA76B5A42B092AAE00DA3B16 /* ChatStateMachine.swift in Sources */,
+				CA76B5862B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift in Sources */,
+				CA76B5632B0818ED00DA3B16 /* ContentView.swift in Sources */,
+				CA76B5612B0818ED00DA3B16 /* ReduxApp.swift in Sources */,
+				CA76B5872B081A8D00DA3B16 /* FetchMessagesActionCreator.swift in Sources */,
+				CA76B59A2B081F2F00DA3B16 /* ChatViewStateItem.swift in Sources */,
+				CA76B5892B081A9C00DA3B16 /* ChatStateReducer.swift in Sources */,
+				CA76B59E2B09295A00DA3B16 /* ChatRepositoring.swift in Sources */,
+				CA76B5952B081D8100DA3B16 /* MessageInputView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CA76B5692B0818EE00DA3B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CA76B56A2B0818EE00DA3B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA76B56C2B0818EE00DA3B16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY246Z94BP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andriiturkin.ReduxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA76B56D2B0818EE00DA3B16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HY246Z94BP;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andriiturkin.ReduxApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA76B5582B0818ED00DA3B16 /* Build configuration list for PBXProject "ReduxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA76B5692B0818EE00DA3B16 /* Debug */,
+				CA76B56A2B0818EE00DA3B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA76B56B2B0818EE00DA3B16 /* Build configuration list for PBXNativeTarget "ReduxApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA76B56C2B0818EE00DA3B16 /* Debug */,
+				CA76B56D2B0818EE00DA3B16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA76B5552B0818ED00DA3B16 /* Project object */;
+}
