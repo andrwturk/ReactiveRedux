@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CA76B5612B0818ED00DA3B16 /* ReduxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */; };
 		CA76B5632B0818ED00DA3B16 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5622B0818ED00DA3B16 /* ContentView.swift */; };
-		CA76B5862B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5842B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift */; };
 		CA76B5872B081A8D00DA3B16 /* FetchMessagesActionCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */; };
 		CA76B5892B081A9C00DA3B16 /* ChatStateReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */; };
 		CA76B58B2B081AA900DA3B16 /* ChatPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B58A2B081AA900DA3B16 /* ChatPresenter.swift */; };
@@ -39,7 +38,6 @@
 		CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxApp.swift; sourceTree = "<group>"; };
 		CA76B5622B0818ED00DA3B16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveRedux.xcodeproj; path = ../ReactiveRedux.xcodeproj; sourceTree = "<group>"; };
-		CA76B5842B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstRecursiveActionCreator.swift; sourceTree = "<group>"; };
 		CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMessagesActionCreator.swift; sourceTree = "<group>"; };
 		CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatStateReducer.swift; sourceTree = "<group>"; };
 		CA76B58A2B081AA900DA3B16 /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
@@ -104,10 +102,7 @@
 				CA76B59B2B0928F200DA3B16 /* Model */,
 				CA76B5982B081F2300DA3B16 /* Presentation */,
 				CA76B5912B081D8100DA3B16 /* UI */,
-				CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */,
-				CA76B5842B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift */,
 				CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */,
-				CA76B5622B0818ED00DA3B16 /* ContentView.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -118,6 +113,7 @@
 				CA76B5922B081D8100DA3B16 /* MessageInputView.swift */,
 				CA76B5932B081D8100DA3B16 /* ChatMessageView.swift */,
 				CA76B5942B081D8100DA3B16 /* ChatView.swift */,
+				CA76B5622B0818ED00DA3B16 /* ContentView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -134,6 +130,7 @@
 		CA76B59B2B0928F200DA3B16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CA76B5A82B09550700DA3B16 /* ActionCreators */,
 				CA76B59C2B09291E00DA3B16 /* Data */,
 				CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */,
 				CA76B58D2B081BD500DA3B16 /* ChatState.swift */,
@@ -150,6 +147,14 @@
 				CA76B59F2B09296300DA3B16 /* ChatRepository.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		CA76B5A82B09550700DA3B16 /* ActionCreators */ = {
+			isa = PBXGroup;
+			children = (
+				CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */,
+			);
+			path = ActionCreators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +248,6 @@
 				CA76B58B2B081AA900DA3B16 /* ChatPresenter.swift in Sources */,
 				CA76B5972B081D8100DA3B16 /* ChatView.swift in Sources */,
 				CA76B5A42B092AAE00DA3B16 /* ChatStateMachine.swift in Sources */,
-				CA76B5862B081A8D00DA3B16 /* FirstRecursiveActionCreator.swift in Sources */,
 				CA76B5632B0818ED00DA3B16 /* ContentView.swift in Sources */,
 				CA76B5612B0818ED00DA3B16 /* ReduxApp.swift in Sources */,
 				CA76B5872B081A8D00DA3B16 /* FetchMessagesActionCreator.swift in Sources */,
