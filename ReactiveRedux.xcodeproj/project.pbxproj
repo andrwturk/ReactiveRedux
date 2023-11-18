@@ -21,6 +21,7 @@
 		CA76B42D2B04C1DC00DA3B16 /* ReduxDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReduxDispatcher.swift; sourceTree = "<group>"; };
 		CA76B42E2B04C1DC00DA3B16 /* ActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCreator.swift; sourceTree = "<group>"; };
 		CA76B5462B08179B00DA3B16 /* ReactiveRedux.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveRedux.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA76B5A72B0953C300DA3B16 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +66,7 @@
 		CAAB89762AFE831E000E333B = {
 			isa = PBXGroup;
 			children = (
+				CA76B5A72B0953C300DA3B16 /* README.md */,
 				CA76B4222B04C1DC00DA3B16 /* ReactiveRedux */,
 				CAAB89802AFE831E000E333B /* Products */,
 			);
