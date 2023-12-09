@@ -19,17 +19,17 @@ class FetchMessagesActionCreator: ActionCreator {
     private let repository: ChatRepositoring
     
     func observeActions() -> AnyPublisher<ChatAction, Error> {
-        return Future<ChatAction, Error> { promise in
-                Task {
-                    do {
-                        let messages = try await self.repository.fetchMessages()
-                        promise(.success(.addMessageHistory(messages)))
-                    } catch {
-                        promise(.failure(error))
-                    }
+        Future<ChatAction, Error> { promise in
+            Task {
+                do {
+                    let messages = try await self.repository.fetchMessages()
+                    promise(.success(.addMessageHistory(messages)))
+                } catch {
+                    promise(.failure(error))
                 }
             }
-            .eraseToAnyPublisher()
+        }
+        .eraseToAnyPublisher()
     }
     
 }

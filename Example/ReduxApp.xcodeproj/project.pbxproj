@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,23 +21,13 @@
 		CA76B59E2B09295A00DA3B16 /* ChatRepositoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B59D2B09295A00DA3B16 /* ChatRepositoring.swift */; };
 		CA76B5A02B09296300DA3B16 /* ChatRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B59F2B09296300DA3B16 /* ChatRepository.swift */; };
 		CA76B5A42B092AAE00DA3B16 /* ChatStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA76B5A32B092AAE00DA3B16 /* ChatStateMachine.swift */; };
+		CA89DE952B252ECE00ADCC10 /* ReactiveRedux in Frameworks */ = {isa = PBXBuildFile; productRef = CA89DE942B252ECE00ADCC10 /* ReactiveRedux */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		CA76B5792B081A2B00DA3B16 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = CA76B5462B08179B00DA3B16;
-			remoteInfo = ReactiveRedux;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		CA76B55D2B0818ED00DA3B16 /* ReduxApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReduxApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA76B5602B0818ED00DA3B16 /* ReduxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxApp.swift; sourceTree = "<group>"; };
 		CA76B5622B0818ED00DA3B16 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveRedux.xcodeproj; path = ../ReactiveRedux.xcodeproj; sourceTree = "<group>"; };
 		CA76B5852B081A8D00DA3B16 /* FetchMessagesActionCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchMessagesActionCreator.swift; sourceTree = "<group>"; };
 		CA76B5882B081A9C00DA3B16 /* ChatStateReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatStateReducer.swift; sourceTree = "<group>"; };
 		CA76B58A2B081AA900DA3B16 /* ChatPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatPresenter.swift; sourceTree = "<group>"; };
@@ -57,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA89DE952B252ECE00ADCC10 /* ReactiveRedux in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,7 +57,6 @@
 		CA76B5542B0818ED00DA3B16 = {
 			isa = PBXGroup;
 			children = (
-				CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */,
 				CA76B55F2B0818ED00DA3B16 /* ReduxApp */,
 				CA76B55E2B0818ED00DA3B16 /* Products */,
 			);
@@ -86,14 +76,6 @@
 				CA76B57B2B081A4000DA3B16 /* Sources */,
 			);
 			path = ReduxApp;
-			sourceTree = "<group>";
-		};
-		CA76B5762B081A2B00DA3B16 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CA76B57A2B081A2B00DA3B16 /* ReactiveRedux.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CA76B57B2B081A4000DA3B16 /* Sources */ = {
@@ -173,6 +155,9 @@
 			dependencies = (
 			);
 			name = ReduxApp;
+			packageProductDependencies = (
+				CA89DE942B252ECE00ADCC10 /* ReactiveRedux */,
+			);
 			productName = ReduxApp;
 			productReference = CA76B55D2B0818ED00DA3B16 /* ReduxApp.app */;
 			productType = "com.apple.product-type.application";
@@ -201,30 +186,17 @@
 				Base,
 			);
 			mainGroup = CA76B5542B0818ED00DA3B16;
+			packageReferences = (
+				CA89DE932B252ECE00ADCC10 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = CA76B55E2B0818ED00DA3B16 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CA76B5762B081A2B00DA3B16 /* Products */;
-					ProjectRef = CA76B5752B081A2B00DA3B16 /* ReactiveRedux.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CA76B55C2B0818ED00DA3B16 /* ReduxApp */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CA76B57A2B081A2B00DA3B16 /* ReactiveRedux.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ReactiveRedux.framework;
-			remoteRef = CA76B5792B081A2B00DA3B16 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA76B55B2B0818ED00DA3B16 /* Resources */ = {
@@ -458,6 +430,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		CA89DE932B252ECE00ADCC10 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA89DE942B252ECE00ADCC10 /* ReactiveRedux */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ReactiveRedux;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA76B5552B0818ED00DA3B16 /* Project object */;
 }
